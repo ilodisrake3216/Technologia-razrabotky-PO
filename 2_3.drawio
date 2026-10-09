@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="I30cnMdGbI-2uYweGz4C">
+    <mxGraphModel dx="1358" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;graph TD\n    %% Стили узлов и артефактов\n    classDef userNode fill:#003366,stroke:#FFFFFF,stroke-width:1.5px,color:#FFFFFF;\n    classDef appNode fill:#4A0000,stroke:#FFFFFF,stroke-width:1.5px,color:#FFFFFF;\n    classDef dbNode fill:#0E4D20,stroke:#FFFFFF,stroke-width:1.5px,color:#FFFFFF;\n    classDef artStyle fill:#4A154B,stroke:#FFFFFF,stroke-width:1px,color:#FFFFFF;\n\n    subgraph UserDevice [\&quot;&lt;b&gt;Узел: Устройство пользователя&lt;/b&gt; (Client Device)\&quot;]\n        Browser[\&quot;&lt;b&gt;«artifact»&lt;/b&gt;&lt;br/&gt;Веб-браузер / Web SPA Client\&quot;]\n    end\n\n    subgraph AppServer [\&quot;&lt;b&gt;Узел: Сервер приложений&lt;/b&gt; (App Server)\&quot;]\n        CoreApp[\&quot;&lt;b&gt;«artifact»&lt;/b&gt;&lt;br/&gt;language_school_core.jar\&quot;]\n        WorkerApp[\&quot;&lt;b&gt;«artifact»&lt;/b&gt;&lt;br/&gt;media_worker Engine\&quot;]\n    end\n\n    subgraph DBServer [\&quot;&lt;b&gt;Узел: Сервер баз данных&lt;/b&gt; (Database Server)\&quot;]\n        Postgres[\&quot;&lt;b&gt;«artifact»&lt;/b&gt;&lt;br/&gt;PostgreSQL DB\&quot;]\n        RedisApp[\&quot;&lt;b&gt;«artifact»&lt;/b&gt;&lt;br/&gt;Redis Cache Server\&quot;]\n    end\n\n    class UserDevice userNode;\n    class AppServer appNode;\n    class DBServer dbNode;\n    class Browser,CoreApp,WorkerApp,Postgres,RedisApp artStyle;\n\n    UserDevice ==&gt;|HTTPS / WSS / WebRTC&lt;br/&gt;&lt;i&gt;(TLS Encrypted)&lt;/i&gt;| AppServer\n    AppServer ==&gt;|Internal TCP/IP&lt;br/&gt;&lt;i&gt;(Port 5432 / 6379)&lt;/i&gt;| DBServer&quot;,&#xa;  &quot;config&quot;: null,&#xa;  &quot;version&quot;: &quot;12&quot;&#xa;}" id="s8Itkbyw6WavV3TK6LV8-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Узел: Сервер баз данных&lt;/b&gt; (Database Server)" mermaidId="n:DBServer" mermaidBaseStyle="html=1;whiteSpace=nowrap;strokeWidth=1.5;verticalAlign=top;fillColor=#0E4D20;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Узел: Сервер баз данных&lt;/b&gt; (Database Server)" id="s8Itkbyw6WavV3TK6LV8-2">
+          <mxCell parent="s8Itkbyw6WavV3TK6LV8-1" style="html=1;whiteSpace=nowrap;strokeWidth=1.5;verticalAlign=top;fillColor=#0E4D20;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="159" width="402" x="30" y="591" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;PostgreSQL DB" mermaidId="n:Postgres" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;PostgreSQL DB" id="s8Itkbyw6WavV3TK6LV8-3">
+          <mxCell parent="s8Itkbyw6WavV3TK6LV8-2" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="67" width="152" x="24" y="58" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;Redis Cache Server" mermaidId="n:RedisApp" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;Redis Cache Server" id="s8Itkbyw6WavV3TK6LV8-4">
+          <mxCell parent="s8Itkbyw6WavV3TK6LV8-2" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="87" width="152" x="226" y="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Узел: Сервер приложений&lt;/b&gt; (App Server)" mermaidId="n:AppServer" mermaidBaseStyle="html=1;whiteSpace=nowrap;strokeWidth=1.5;verticalAlign=top;fillColor=#4A0000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Узел: Сервер приложений&lt;/b&gt; (App Server)" id="s8Itkbyw6WavV3TK6LV8-5">
+          <mxCell parent="s8Itkbyw6WavV3TK6LV8-1" style="html=1;whiteSpace=nowrap;strokeWidth=1.5;verticalAlign=top;fillColor=#4A0000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="159" width="402" x="30" y="311" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;language_school_core.jar" mermaidId="n:CoreApp" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;language_school_core.jar" id="s8Itkbyw6WavV3TK6LV8-6">
+          <mxCell parent="s8Itkbyw6WavV3TK6LV8-5" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="67" width="152" x="24" y="58" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;media_worker Engine" mermaidId="n:WorkerApp" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;media_worker Engine" id="s8Itkbyw6WavV3TK6LV8-7">
+          <mxCell parent="s8Itkbyw6WavV3TK6LV8-5" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="87" width="152" x="226" y="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Узел: Устройство пользователя&lt;/b&gt; (Client Device)" mermaidId="n:UserDevice" mermaidBaseStyle="html=1;whiteSpace=nowrap;strokeWidth=1.5;verticalAlign=top;fillColor=#003366;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Узел: Устройство пользователя&lt;/b&gt; (Client Device)" id="s8Itkbyw6WavV3TK6LV8-8">
+          <mxCell parent="s8Itkbyw6WavV3TK6LV8-1" style="html=1;whiteSpace=nowrap;strokeWidth=1.5;verticalAlign=top;fillColor=#003366;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="159" width="361" x="51" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;Веб-браузер / Web SPA Client" mermaidId="n:Browser" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;«artifact»&lt;/b&gt;&#xa;Веб-браузер / Web SPA Client" id="s8Itkbyw6WavV3TK6LV8-9">
+          <mxCell parent="s8Itkbyw6WavV3TK6LV8-8" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="87" width="152" x="24" y="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="HTTPS / WSS / WebRTC&#xa;&lt;i&gt;(TLS Encrypted)&lt;/i&gt;" mermaidId="e:UserDevice-&gt;AppServer#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=3;strokeWidth=3.5;startSize=3;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="HTTPS / WSS / WebRTC&#xa;&lt;i&gt;(TLS Encrypted)&lt;/i&gt;" id="s8Itkbyw6WavV3TK6LV8-10">
+          <mxCell edge="1" parent="s8Itkbyw6WavV3TK6LV8-1" source="s8Itkbyw6WavV3TK6LV8-8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=3;strokeWidth=3.5;startSize=3;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="s8Itkbyw6WavV3TK6LV8-5">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="Internal TCP/IP&#xa;&lt;i&gt;(Port 5432 / 6379)&lt;/i&gt;" mermaidId="e:AppServer-&gt;DBServer#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=3;strokeWidth=3.5;startSize=3;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="Internal TCP/IP&#xa;&lt;i&gt;(Port 5432 / 6379)&lt;/i&gt;" id="s8Itkbyw6WavV3TK6LV8-11">
+          <mxCell edge="1" parent="s8Itkbyw6WavV3TK6LV8-1" source="s8Itkbyw6WavV3TK6LV8-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=3;strokeWidth=3.5;startSize=3;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="s8Itkbyw6WavV3TK6LV8-2">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

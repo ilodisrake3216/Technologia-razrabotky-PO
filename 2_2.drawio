@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="-WYRtJHAfUE6gm4XJ_h6">
+    <mxGraphModel dx="945" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;graph LR\n    %% Стили компонентов\n    classDef uiStyle fill:#4A154B,stroke:#FFFFFF,stroke-width:1.5px,color:#FFFFFF;\n    classDef coreStyle fill:#003366,stroke:#FFFFFF,stroke-width:1.5px,color:#FFFFFF;\n    classDef mediaStyle fill:#4A0000,stroke:#FFFFFF,stroke-width:1.5px,color:#FFFFFF;\n    classDef dbStyle fill:#0E4D20,stroke:#FFFFFF,stroke-width:1.5px,color:#FFFFFF;\n    classDef redisStyle fill:#555500,stroke:#FFFFFF,stroke-width:1.5px,color:#FFFFFF;\n    classDef extStyle fill:#222222,stroke:#888888,stroke-width:1px,stroke-dasharray: 5 5,color:#FFFFFF;\n\n    UI[\&quot;&lt;b&gt;Web UI Client&lt;/b&gt;&lt;br/&gt;&lt;i&gt;(Фронтенд SPA)&lt;/i&gt;&lt;br/&gt;&lt;small&gt;Отв: Разработчик А&lt;/small&gt;\&quot;]\n    Core[\&quot;&lt;b&gt;Core Service&lt;/b&gt;&lt;br/&gt;&lt;i&gt;(Backend Монолит)&lt;/i&gt;&lt;br/&gt;&lt;small&gt;Отв: Разработчик Б&lt;/small&gt;\&quot;]\n    Media[\&quot;&lt;b&gt;Media &amp; Chat Engine&lt;/b&gt;&lt;br/&gt;&lt;i&gt;(WebSocket / WebRTC)&lt;/i&gt;&lt;br/&gt;&lt;small&gt;Отв: Разработчик В&lt;/small&gt;\&quot;]\n    DB[(\&quot;&lt;b&gt;PostgreSQL DB&lt;/b&gt;&lt;br/&gt;&lt;i&gt;(Реляционная БД)&lt;/i&gt;\&quot;)]\n    Redis[(\&quot;&lt;b&gt;Redis Cache / S3&lt;/b&gt;&lt;br/&gt;&lt;i&gt;(In-Memory / Файлы)&lt;/i&gt;\&quot;)]\n    Payment[\&quot;«external»&lt;br/&gt;&lt;b&gt;Payment Gateway&lt;/b&gt;\&quot;]\n\n    class UI uiStyle;\n    class Core coreStyle;\n    class Media mediaStyle;\n    class DB dbStyle;\n    class Redis redisStyle;\n    class Payment extStyle;\n\n    UI --&gt;|REST / HTTPS| Core\n    UI --&gt;|WSS / WebRTC| Media\n    Core --&gt;|SQL| DB\n    Media --&gt;|In-Memory API| Redis\n    Core -.-&gt;|HTTPS API| Payment&quot;,&#xa;  &quot;config&quot;: null,&#xa;  &quot;version&quot;: &quot;12&quot;&#xa;}" id="EA3Sx3-I8AgjRm1lExX5-21">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Клиент браузерного интерфейса&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Фронтенд SPA)&lt;/i&gt;&lt;br&gt;&lt;small&gt;Отв: Разработчик А&lt;/small&gt;" mermaidId="n:UI" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1.5;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Web UI Client&lt;/b&gt;&#xa;&lt;i&gt;(Фронтенд SPA)&lt;/i&gt;&#xa;&lt;small&gt;Отв: Разработчик А&lt;/small&gt;" id="EA3Sx3-I8AgjRm1lExX5-22">
+          <mxCell parent="EA3Sx3-I8AgjRm1lExX5-21" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fillColor=#4A154B;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="172" width="152" x="30" y="1173" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Ядро сервиса&lt;/b&gt;&lt;br&gt;&lt;i&gt;(Backend Монолит)&lt;/i&gt;&lt;br&gt;&lt;small&gt;Отв: Разработчик Б&lt;/small&gt;" mermaidId="n:Core" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1.5;fillColor=#003366;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Core Service&lt;/b&gt;&#xa;&lt;i&gt;(Backend Монолит)&lt;/i&gt;&#xa;&lt;small&gt;Отв: Разработчик Б&lt;/small&gt;" id="EA3Sx3-I8AgjRm1lExX5-23">
+          <mxCell parent="EA3Sx3-I8AgjRm1lExX5-21" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fillColor=#003366;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="172" width="152" x="363" y="1067" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Движок чата и медиа&lt;/b&gt;&lt;br&gt;&lt;i&gt;(WebSocket / WebRTC)&lt;/i&gt;&lt;br&gt;&lt;small&gt;Отв: Разработчик В&lt;/small&gt;" mermaidId="n:Media" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1.5;fillColor=#4A0000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Media &amp; Chat Engine&lt;/b&gt;&#xa;&lt;i&gt;(WebSocket / WebRTC)&lt;/i&gt;&#xa;&lt;small&gt;Отв: Разработчик В&lt;/small&gt;" id="EA3Sx3-I8AgjRm1lExX5-24">
+          <mxCell parent="EA3Sx3-I8AgjRm1lExX5-21" style="html=1;whiteSpace=wrap;strokeWidth=1.5;fillColor=#4A0000;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="172" width="152" x="363" y="1318" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;PostgreSQL DB&lt;/b&gt;&#xa;&lt;i&gt;(Реляционная БД)&lt;/i&gt;" mermaidId="n:DB" mermaidBaseStyle="html=1;shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=1.5;whiteSpace=wrap;fillColor=#0E4D20;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;PostgreSQL DB&lt;/b&gt;&#xa;&lt;i&gt;(Реляционная БД)&lt;/i&gt;" id="EA3Sx3-I8AgjRm1lExX5-25">
+          <mxCell parent="EA3Sx3-I8AgjRm1lExX5-21" style="html=1;shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=1.5;whiteSpace=wrap;fillColor=#0E4D20;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="149" width="144" x="700" y="1000" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Redis Cache / S3&lt;/b&gt;&#xa;&lt;i&gt;(In-Memory / Файлы)&lt;/i&gt;" mermaidId="n:Redis" mermaidBaseStyle="html=1;shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=1.5;whiteSpace=wrap;fillColor=#555500;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="&lt;b&gt;Redis Cache / S3&lt;/b&gt;&#xa;&lt;i&gt;(In-Memory / Файлы)&lt;/i&gt;" id="EA3Sx3-I8AgjRm1lExX5-26">
+          <mxCell parent="EA3Sx3-I8AgjRm1lExX5-21" style="html=1;shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=1.5;whiteSpace=wrap;fillColor=#555500;strokeColor=#FFFFFF;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="149" width="144" x="700" y="1330" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«external»&#xa;&lt;b&gt;Payment Gateway&lt;/b&gt;" mermaidId="n:Payment" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#222222;strokeColor=#888888;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;dashed=1;dashPattern=5 5;fixDash=1;" mermaidBaseValue="«external»&#xa;&lt;b&gt;Payment Gateway&lt;/b&gt;" id="EA3Sx3-I8AgjRm1lExX5-27">
+          <mxCell parent="EA3Sx3-I8AgjRm1lExX5-21" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#222222;strokeColor=#888888;fontColor=#FFFFFF;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;dashed=1;dashPattern=5 5;fixDash=1;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="87" width="152" x="700" y="1189" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="REST / HTTPS" mermaidId="e:UI-&gt;Core#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.35;entryX=0;entryY=0.5;strokeWidth=2;targetPerimeterSpacing=4;" mermaidBaseValue="REST / HTTPS" id="EA3Sx3-I8AgjRm1lExX5-28">
+          <mxCell edge="1" parent="EA3Sx3-I8AgjRm1lExX5-21" source="EA3Sx3-I8AgjRm1lExX5-22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.35;entryX=0;entryY=0.5;strokeWidth=2;targetPerimeterSpacing=4;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="EA3Sx3-I8AgjRm1lExX5-23">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="202" y="1234" />
+                <mxPoint x="202" y="1153" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="WSS / WebRTC" mermaidId="e:UI-&gt;Media#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.65;entryX=0;entryY=0.5;strokeWidth=2;targetPerimeterSpacing=4;" mermaidBaseValue="WSS / WebRTC" id="EA3Sx3-I8AgjRm1lExX5-29">
+          <mxCell edge="1" parent="EA3Sx3-I8AgjRm1lExX5-21" source="EA3Sx3-I8AgjRm1lExX5-22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.65;entryX=0;entryY=0.5;strokeWidth=2;targetPerimeterSpacing=4;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="EA3Sx3-I8AgjRm1lExX5-24">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="202" y="1284" />
+                <mxPoint x="202" y="1404" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="SQL" mermaidId="e:Core-&gt;DB#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.35;entryX=0;entryY=0.5;strokeWidth=2;targetPerimeterSpacing=4;" mermaidBaseValue="SQL" id="EA3Sx3-I8AgjRm1lExX5-30">
+          <mxCell edge="1" parent="EA3Sx3-I8AgjRm1lExX5-21" source="EA3Sx3-I8AgjRm1lExX5-23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.35;entryX=0;entryY=0.5;strokeWidth=2;targetPerimeterSpacing=4;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="EA3Sx3-I8AgjRm1lExX5-25">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="535" y="1128" />
+                <mxPoint x="535" y="1074" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="In-Memory API" mermaidId="e:Media-&gt;Redis#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;targetPerimeterSpacing=4;" mermaidBaseValue="In-Memory API" id="EA3Sx3-I8AgjRm1lExX5-31">
+          <mxCell edge="1" parent="EA3Sx3-I8AgjRm1lExX5-21" source="EA3Sx3-I8AgjRm1lExX5-24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;targetPerimeterSpacing=4;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="EA3Sx3-I8AgjRm1lExX5-26">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="HTTPS API" mermaidId="e:Core-&gt;Payment#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;dashed=1;dashPattern=2 2;fixDash=1;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.65;entryX=0;entryY=0.49;strokeWidth=2;targetPerimeterSpacing=4;" mermaidBaseValue="HTTPS API" id="EA3Sx3-I8AgjRm1lExX5-32">
+          <mxCell edge="1" parent="EA3Sx3-I8AgjRm1lExX5-21" source="EA3Sx3-I8AgjRm1lExX5-23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;dashed=1;dashPattern=2 2;fixDash=1;startArrow=none;endArrow=block;endSize=8;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.65;entryX=0;entryY=0.49;strokeWidth=2;targetPerimeterSpacing=4;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="EA3Sx3-I8AgjRm1lExX5-27">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="535" y="1178" />
+                <mxPoint x="535" y="1232" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
