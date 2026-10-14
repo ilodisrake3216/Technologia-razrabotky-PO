@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="XeFavdbpumRKjDONMxro">
+    <mxGraphModel dx="945" dy="1746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0SG8d1xJ-Ml1nKzkXz_S-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="220" as="sourcePoint" />
+            <mxPoint x="210" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0SG8d1xJ-Ml1nKzkXz_S-4" edge="1" parent="1" source="tn4OtIITrzHWrWGT1U4I-3" style="endArrow=classic;html=1;rounded=0;exitX=0.005;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="150" y="250" as="sourcePoint" />
+            <mxPoint x="150" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0SG8d1xJ-Ml1nKzkXz_S-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="220" as="sourcePoint" />
+            <mxPoint x="490" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0SG8d1xJ-Ml1nKzkXz_S-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.019;entryY=0.955;entryDx=0;entryDy=0;entryPerimeter=0;" target="tn4OtIITrzHWrWGT1U4I-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="190" as="sourcePoint" />
+            <mxPoint x="470" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0SG8d1xJ-Ml1nKzkXz_S-11" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="190" as="sourcePoint" />
+            <mxPoint x="360" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0SG8d1xJ-Ml1nKzkXz_S-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#190033);" value="Серверная система безопасности и паролей external&lt;br&gt;(Разработчик В)" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0SG8d1xJ-Ml1nKzkXz_S-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="tn4OtIITrzHWrWGT1U4I-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="470" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tn4OtIITrzHWrWGT1U4I-1" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#190033);" value="БД администрации&lt;br&gt;external&lt;br&gt;(Разработчик В)" vertex="1">
+          <mxGeometry height="60" width="130" x="480" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="tn4OtIITrzHWrWGT1U4I-2" parent="1" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=light-dark(#505050,#B266FF);labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.concepts.website;" value="&lt;span style=&quot;white-space: normal;&quot;&gt;Сайт системы&lt;/span&gt;&lt;br style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;(разработчик Б)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="130" x="270" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="tn4OtIITrzHWrWGT1U4I-3" parent="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=light-dark(#2875E2,#B266FF);strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=api" value="&lt;span style=&quot;white-space: normal;&quot;&gt;Интерфейс (разработчик А)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="72.92" x="149.99999999999997" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="tn4OtIITrzHWrWGT1U4I-4" parent="1" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;fillColor=light-dark(#FFFFFF,#190033);" value="Файловое хранилище и папки проекта&lt;br&gt;(Разработчик В)" vertex="1">
+          <mxGeometry height="140" width="102.92" x="120" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="tn4OtIITrzHWrWGT1U4I-7" parent="1" style="shape=mxgraph.signs.travel.cashier;html=1;pointerEvents=1;fillColor=light-dark(#000000,#B266FF);strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" value="&lt;span style=&quot;white-space: normal;&quot;&gt;Система оплаты external&lt;/span&gt;&lt;br style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;(Разработчик В)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="99" width="99" x="480" y="-60" as="geometry" />
+        </mxCell>
+        <mxCell id="tn4OtIITrzHWrWGT1U4I-8" parent="1" style="shape=message;html=1;html=1;outlineConnect=0;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;fillColor=light-dark(#FFFFFF,#190033);" value="&lt;span style=&quot;white-space: normal;&quot;&gt;Система уведомлений external&lt;/span&gt;&lt;br style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;(Разработчик В)&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(rgb(27, 29, 30), transparent);&quot;&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="99" x="500" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tn4OtIITrzHWrWGT1U4I-10" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/security.svg;" value="" vertex="1">
+          <mxGeometry height="80" width="50.4" x="249.6" y="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

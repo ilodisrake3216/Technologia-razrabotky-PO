@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="4EQ6GV0uwEswXzUP9K8C">
+    <mxGraphModel dx="2329" dy="2590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#003300);fontSize=8;" value="&lt;span style=&quot;font-size: 9pt; line-height: 115%;&quot;&gt;пакет&lt;br&gt;интерфейса&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="139" x="207" y="-90" as="geometry" />
+        </mxCell>
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#003300);fontSize=8;" value="&lt;span style=&quot;font-size: 9pt; line-height: 115%;&quot;&gt;пакет&lt;br&gt;организации и администрации&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="186" x="217" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#003300);" value="&lt;span style=&quot;line-height: 115%;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;пакет&lt;br&gt;Пользователи и доступ&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="143" x="224" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-12" edge="1" parent="1" source="GdhMY5CEyzc3M6VTI84c-2" style="endArrow=classic;html=1;rounded=0;exitX=0.606;exitY=0.977;exitDx=0;exitDy=0;dashed=1;entryX=0.612;entryY=-0.012;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="GdhMY5CEyzc3M6VTI84c-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="480" as="sourcePoint" />
+            <mxPoint x="340" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#003300);" value="&lt;span style=&quot;line-height: 115%;&quot;&gt;&lt;font&gt;пакет&lt;br&gt;Обучение и курсы&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="130" x="217" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-14" edge="1" parent="1" source="FboHo5NbtfhbS-hflXWQ-15" style="endArrow=classic;html=1;rounded=0;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="GdhMY5CEyzc3M6VTI84c-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="510" y="430" as="sourcePoint" />
+            <mxPoint x="610" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#333300);" value="Система оплаты&lt;br&gt;external" vertex="1">
+          <mxGeometry height="60" width="120" x="663" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-16" edge="1" parent="1" source="FboHo5NbtfhbS-hflXWQ-17" style="endArrow=classic;html=1;rounded=0;dashed=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="604.5" as="sourcePoint" />
+            <mxPoint x="510" y="604.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#333300);" value="БД external" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="GdhMY5CEyzc3M6VTI84c-5" edge="1" parent="1" source="FboHo5NbtfhbS-hflXWQ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="213.00000000000023" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FboHo5NbtfhbS-hflXWQ-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#333300);" value="Сервис электронной почты и смс&lt;br&gt;external" vertex="1">
+          <mxGeometry height="60" width="120" x="670" y="183" as="geometry" />
+        </mxCell>
+        <mxCell id="GdhMY5CEyzc3M6VTI84c-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#003300);align=left;verticalAlign=top;fontSize=15;" value="Класс - Пользователь, Слушатель, Преподаватель&lt;div&gt;Бизнесс-логика: Регистрация, авторизация, личный кабинет, управление аккаунтами, уровни доступа, хранение личной информации&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="286" x="224" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="GdhMY5CEyzc3M6VTI84c-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#003300);align=left;verticalAlign=top;fontSize=15;" value="Класс - Курс, Уровень_и_результат, язык&lt;div&gt;Бизнесс-логика: Каталог курсов и групп, таблица успеваемости, звёздный слушатель, подсчёт балов, учебный материал&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="303" x="217" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="GdhMY5CEyzc3M6VTI84c-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#003300);align=left;verticalAlign=top;fontSize=15;" value="Класс - Администрация. группы&lt;br&gt;Бизнесс-логика: контроль, рассылка, предложение, управление группами, коммуникация, автоопределение, распиание." vertex="1">
+          <mxGeometry height="110" width="303" x="215.5" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="GdhMY5CEyzc3M6VTI84c-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="GdhMY5CEyzc3M6VTI84c-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="372" y="275" as="sourcePoint" />
+            <mxPoint x="362" y="317" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GdhMY5CEyzc3M6VTI84c-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#003300);align=left;verticalAlign=top;fontSize=15;" value="Класс - Интерфейс&lt;br&gt;Бизнесс-логика: Интерфейс панели управления, веб-интерфейс, интерфейс звонка и чата, интерфейс личного кабинета" vertex="1">
+          <mxGeometry height="110" width="303" x="207" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="GdhMY5CEyzc3M6VTI84c-7" edge="1" parent="1" source="GdhMY5CEyzc3M6VTI84c-6" style="endArrow=classic;html=1;rounded=0;exitX=0.63;exitY=1.035;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;dashed=1;" target="FboHo5NbtfhbS-hflXWQ-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="520" y="30" as="sourcePoint" />
+            <mxPoint x="570" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGXqIlNCAtoQlPMuufW_-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Хранение учётных записей" vertex="1">
+          <mxGeometry height="30" width="143" x="520" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="sGXqIlNCAtoQlPMuufW_-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Пользователи привязаны к курсам и у них есть статистика и уровень" vertex="1">
+          <mxGeometry height="30" width="143" x="400" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="sGXqIlNCAtoQlPMuufW_-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Администрация оказывает влияние на обучение" vertex="1">
+          <mxGeometry height="30" width="143" x="377" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="sGXqIlNCAtoQlPMuufW_-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Курсы надо оплачивать" vertex="1">
+          <mxGeometry height="30" width="143" x="520" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="sGXqIlNCAtoQlPMuufW_-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Администрация оповещает и рассылает информацию пользователям" vertex="1">
+          <mxGeometry height="30" width="143" x="520" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="sGXqIlNCAtoQlPMuufW_-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Интерфейс знает обо всех и вызвает их сервсиы" vertex="1">
+          <mxGeometry height="30" width="143" x="403" y="83" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
